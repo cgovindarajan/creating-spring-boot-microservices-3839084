@@ -11,6 +11,9 @@ public class Application {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(Application.class.getPackageName());
         TravelAgentService agent = context.getBean(TravelAgentService.class);
+        TourManagementService management = context.getBean(TourManagementService.class);
+        management.createTour("Zoo Tour",100,true);
+        System.out.println("\n**** create zoo tour");
         System.out.println("\n******Explore California Tour Catalogue******");
         agent.displayTours();
 
