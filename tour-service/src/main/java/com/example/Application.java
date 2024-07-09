@@ -3,6 +3,7 @@ package com.example;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.example.tourservice.TourManagementService;
 import com.example.tourservice.TravelAgentService;
 
 public class Application {
